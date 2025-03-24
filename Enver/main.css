@@ -1,0 +1,474 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19191B;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 80px 0px 60px;
+}
+
+/* Header end */
+    
+.gradient {
+    position: absolute;
+    top: -62px;
+    width: 467px;
+    height: 1233px;
+    transform: rotate(-54.374deg);
+    border-radius: 233px;
+    background:linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.1134) 100%);
+    filter: blur(150px);
+}
+
+
+
+.navbar__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.home {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #5454D4;
+}
+
+.list-item  a {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.70);
+    text-decoration: none;
+}
+
+.list-item  a:hover {
+    color: #5454D4;
+}
+
+.contact__btn {
+    padding: 12px 20px;
+    background-color: #19191B;
+    border: solid 1px rgba(255, 255, 255, 0.70);
+    color: white;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact__btn:hover {
+    background-color: #5454D4;
+}
+
+#check {
+    display: none;
+}
+
+.menu__btn {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .nav__list {
+        width: 200px;
+        height: 500px;
+        padding: 100px 10px 0px 10px;
+        background-color: #5454D4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all .3s ease;
+        z-index: 9999;
+        border-radius: 100% 0% 100% 0% / 0% 42% 58% 100%  ;
+    }
+
+    #check:checked + .nav__list{
+        transform: translateX(0);
+    }
+
+    .list-item a {
+        color: white;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contact__btn {
+        display: none;
+    }
+
+    .gradient {
+        display: none;
+    }
+}
+/* end of header */
+
+
+/* Platform and */
+    .platform {
+        margin-top: 155px;
+    }
+
+    .platform__wrapper {
+        display: flex;
+    }
+
+    .subtitle {
+        font-family: "Graphik";
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 84px;
+        max-width: 560px;
+        color: white;
+    }
+
+    .enver {
+        font-family: "Nunito Sans";
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 39px;
+        color:rgba(255, 255, 255, 0.70) ;
+        max-width: 570px;
+        margin-top: 24px;
+    }
+
+    .our__btn1 {
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        padding: 16px 27px;
+        background-color: #5454D4;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    .our__btn1:hover {
+        background-color: #a7b4df;
+    }
+
+    @media screen and (max-width:1024px) {
+        .plat__elem {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .our__btn {
+            margin-left: 180px;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .platform {
+            margin-top: 66px;
+        }
+
+        .plat__elem {
+            text-align: start;
+        }
+
+        .subtitle {
+            font-family: "Graphik";
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 63px;
+            max-width: 327px;
+
+        }
+
+        .enver {
+            font-family: "Nunito Sans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+
+        .our__btn {
+            margin-top: 20px;
+            padding: 10px 18px;
+        }
+
+        .container {
+            padding: 40px 24px 0px 24px;
+        }
+    }
+
+/* End of platform */
+
+/* choose start */
+.choose {
+    margin-top: 240px;
+}
+
+.best {
+    font-family: "Graphik";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    max-width: 580px;
+    color: white;
+}
+
+.watch {
+    font-family: "Nunito Sans";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 39px;
+    max-width: 650px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.choose__paragraf {
+    display: flex;
+    align-items: center;
+    gap:24px;
+}
+
+.people {
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1024px) {
+    .choose__paragraf {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .people {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .people {
+        max-width: 300px;
+    }
+
+    .best {
+        font-family: "Graphik";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+
+    }
+}
+/* End of choose */
+
+
+
+/* start providio */
+.gradient2 {
+    width: 467px;
+    height: 508.5px;
+    position: absolute;
+    top: 2049.59px;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.21) 0%, rgba(84, 84, 212, 0.0882) 100%);
+    filter: blur(150px);
+}
+
+.providio__elem {
+    display: flex;
+    gap: 84px;
+}
+
+.for__you {
+    font-family: "Graphik";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    max-width: 695px;
+    color: white;
+    text-align: center;
+}
+
+.boxss {
+    margin-top: 98px;
+    display: flex;
+}
+
+.boxsss {
+    margin-top: 98px;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.box {
+   
+    margin: 0 auto;
+    width: 384px;
+    height: 300px;
+}
+
+.development {
+    font-family: "Nunito Sans";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px   ;
+}
+
+.create {
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 299px;
+    color: rgba(255, 255, 255, 0.70);
+    margin-top: 20px;
+}
+
+.img__icon {
+    margin-left: 85px;
+}
+
+@media screen and (max-width:1024px) {
+    .boxss {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .boxsss {
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .potplay {
+        display: none;
+    }
+
+    .for__you {
+        font-family: "Graphik";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+
+    }
+
+    .create {
+        margin-left: 60px;
+    }
+}
+
+/* end of providio */
+
+
+
+/* start portfolio*/
+.portfolio {
+    margin-top: 150px;
+}
+
+.port2__elem {
+    display: flex;
+    gap: 300px;
+}
+
+.port__our {
+    font-family: "Nunito Sans";
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 79px;
+    color: white;
+}
+
+.dumaloq {
+    margin-top: 40px;
+}
+
+.gradient22 {
+    width: 599.58px;
+    height: 652.85px;
+    position: absolute;
+    top: 2900px;
+    left: 650px;
+    border-radius: 233.5px;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%);
+    filter: blur(150px);
+}
+
+.silede {
+    display: flex;
+    gap: 24px;
+    margin-top: 70px;
+}
+/* end of portfolio */
+
+/* start contact */
+.contact {
+    margin-top: 168px;
+    background-color: #1E1E2080;
+    height: 506px;
+}
+
+.contact__p {
+    font-family: "Graphik";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 66px;
+    color: white;
+    max-width: 750px;
+}
+
+.contact__us {
+    font-family:" Nunito Sans";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29px;
+    color: white;
+    background-color: #5454D4;
+    padding: 17px 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.contact__elem2 {
+    display: flex;
+    /* gap: 103px; */
+}
+
+
+
+/* end of contact */

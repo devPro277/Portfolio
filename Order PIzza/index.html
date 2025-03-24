@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <center class="pizza22">
+        <div class="container">
+            <h1>Pizza Order</h1>
+            <form id="pizzaForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" >
+        
+                <label for="address">Address:</label>
+                <input type="text" id="address" >
+        
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" >
+        
+                <label for="dough">Dough:</label>
+                <select id="dough" required>
+                    <option value="Thin">Thin</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Thick">Thick</option>
+                </select>
+        
+                <label for="size">Size:</label>
+                <select id="size" required>
+                    <option value="20">20 cm</option>
+                    <option value="30">30 cm</option>
+                    <option value="40">40 cm</option>
+                </select>
+                
+                <label>Additional Toppings:</label>
+                <div class="topping-checkboxes">
+                    <input type="checkbox" id="tomato" value="Tomato">
+                    <label for="tomato">Tomato</label>
+        
+                    <input type="checkbox" id="olivie" value="Olivie">
+                    <label for="olivie">Olivie</label>
+        
+                    <input type="checkbox" id="meat" value="Meat">
+                    <label for="meat">Meat</label>
+        
+                    <input type="checkbox" id="sausage" value="Sausage">
+                    <label for="sausage">Sausage</label>
+                </div>
+        
+                <button type="button" onclick="saveOrder()">Save</button>
+            </form> 
+            <div class="orderSummery" id="orderSummary"></div> 
+        </div>
+        <div class="menu1">
+            <div class="thin_medium_thick">
+                <p>Thin-$25</p>
+                <p>Medium-$30</p>
+                <p>Thick-$40</p>
+            </div>
+            <br>
+            <br>
+            <p><strong>On Pizza:</strong></p>
+            <p>every-$5</p>
+            <br>
+            <br>
+            <p><strong>Add:</strong></p>
+            <p>every-$2</p>
+        </div>
+    </center>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>

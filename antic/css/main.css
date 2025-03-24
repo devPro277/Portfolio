@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Varta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans&family=Varta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3EEE8;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 69px 0px 0px 100px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: #706458;
+  font-family: "Varta";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.ul__img {
+  margin-left: 500px;
+  z-index: 1000;
+}
+
+.design {
+  margin-top: 110px;
+}
+
+.logo__tag {
+  font-family: "Merriweather";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #A06056;
+}
+
+.home {
+  font-family: "Varta";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #A06056;
+}
+
+.home__h3 {
+  font-family: "Merriweather";
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #A06056;
+  max-width: 420px;
+  margin-top: 50px;
+}
+
+.home__p {
+  font-family: "Varta";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 31px;
+  color: #706458;
+  max-width: 350px;
+  margin-top: 19px;
+}
+
+.home__scroll {
+  margin-top: 43px;
+}
+
+.img__uchun {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#check {
+  display: none;
+}
+
+.lab {
+  display: none;
+}
+
+.find {
+  margin-top: 100px;
+}
+
+.room {
+  font-family: "Merriweather";
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #706458;
+}
+
+.room__p {
+  font-family: "Varta";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #706458;
+  max-width: 165px;
+}
+
+.elements2 {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+}
+
+.room__new {
+  font-family: "Varta";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #706458;
+}
+
+.img__p2 {
+  display: flex;
+  gap: 32px;
+  margin-left: 40px;
+}
+
+.project {
+  margin-top: 100px;
+  display: flex;
+}
+
+.pro__h2 {
+  font-family: Merriweather;
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #706458;
+  max-width: 458px;
+}
+
+.pro__p {
+  font-family: "Karla";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #A06056;
+  margin-top: 30px;
+}
+
+.our {
+  font-family: "Varta";
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #A06056;
+}
+
+.what {
+  font-family: "Varta";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #706458;
+  max-width: 258px;
+  margin-top: 12px;
+}
+
+.tags4 {
+  display: flex;
+  gap: 29px;
+  margin-left: 50px;
+}
+
+.box2 {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .uchun__img {
+    display: none;
+  }
+  .ul__img {
+    display: none;
+  }
+  .navbar {
+    margin-left: 200px;
+  }
+  .design {
+    margin-left: px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .elements2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .tags4 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: #F85E9F;
+    padding: 30px;
+    height: 80vh;
+    width: 20%;
+    z-index: 9999;
+    transition: all 0.4s ease;
+    padding-top: 100px;
+  }
+  #check:checked ~ .nav-list {
+    transform: translateX(0);
+  }
+  .lab {
+    display: block;
+  }
+  .uchun__img {
+    display: block;
+  }
+  .element {
+    z-index: 1000;
+  }
+  .logo__tag {
+    font-family: "Merriweather";
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    z-index: 1000px;
+  }
+  .home {
+    color: white;
+  }
+  .home__h3 {
+    color: white;
+  }
+  .home__p {
+    color: white;
+  }
+  .menu__img {
+    z-index: 9999;
+  }
+  .img__p2 {
+    display: none;
+  }
+  .tags4 {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
